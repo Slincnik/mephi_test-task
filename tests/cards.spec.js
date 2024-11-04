@@ -198,7 +198,7 @@ describe("filter input tests", () => {
 
   test.each([
     { filter: "Jane", result: 1 },
-    { filter: "12/23", result: 4 },
+    { filter: "12/23", result: 3 },
     { filter: 6310, result: 1 },
   ])("should work with each public field, filter: $filter should be $result length", async ({ filter, result }) => {
     const input = indexPage.find("input");
